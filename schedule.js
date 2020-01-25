@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 const schedule = require('node-schedule');
 
 module.exports.nasaPicture = (client) => {
-	schedule.scheduleJob('4 23 * * *', function() {
+	schedule.scheduleJob('0 23 * * *', function() {
 		const baseURL = 'https://api.nasa.gov/planetary/apod?api_key=';
 		const apiKey = process.env.NASA;
 
